@@ -56,7 +56,7 @@ const chartData = [
 
 // STEP 3 - Creating the JSON object to store the chart configurations
 const chartConfigs = {
-  type: "column2d", // The chart type
+  type: "bar2d", // The chart type
   width: "700", // Width of the chart
   height: "400", // Height of the chart
   dataFormat: "json", // Data type
@@ -83,7 +83,7 @@ const chartConfigs = {
 // STEP 4 - Creating the DOM element to pass the react-fusioncharts component
 class App extends React.Component {
   render() {
-    return (<ReactFC {...chartConfigs} />);
+    return <ReactFC {...chartConfigs} />;
   }
 }
 
